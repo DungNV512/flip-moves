@@ -13,6 +13,8 @@
   ],
   "scripts": {
     "lint": "eslint .",
+    "prestart": "next build",
+    "start": "next start -p ${PORT}",
     "lint:fix": "npm run lint -- --fix",
     "build": "rollup -c",
     "flow": "flow",
@@ -109,5 +111,8 @@
     "tslint": "5.18.0",
     "typescript": "3.5.3",
     "webpack": "3.6.0"
+  },
+  "dependencies": {
+    "next": "^9.2.1"
   }
 }
